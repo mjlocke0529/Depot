@@ -2,13 +2,63 @@
 <html>
 <head>
   <title>Depot</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= stylesheet_link_tag "reset" %>
+  <%= stylesheet_link_tag "depot", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body id="store" >
+<div id="container">
+ 
+<div id="header">
+      <div id="banner" >
+    <%= image_tag("LOGO2.png") %>
+    
+    </div><ul id="nav">
+     <li>
+    <a href="http://www..../contact" >Contact</a>
+    </li>
+    <li>
+      <a href="http://www..../faq" >Questions</a>
+    </li>
+    <li>
+    <a href="http://www..../news" >News</a>
+    </li>
+   <li>
+      <a href="http://www...." >Home</a>
+    </li>
+    </ul>
+ 
+</div>
+<div id="content">
+ <div id="wrapper" >
+    <div id="columns" >
+    <div id ="side"><ul>
+     <li>
+    <a href="http://www..../contact" >Contact</a>
+    </li>
+    <li>
+      <a href="http://www..../faq" >Questions</a>
+    </li>
+    <li>
+    <a href="http://www..../news" >News</a>
+    </li>
+   <li>
+      <a href="http://www...." >Home</a>
+    </li>
+    </ul></div>
+    <div id="main" >
+      
 
-<%= yield %>
-
+    <%= yield %>
+    </div>
+    </div>
+  </div>
+    
+    <div id="footer">
+       <div id="wrapper">Copyright 2011 MadeSticky.com</div>
+    </div>
+ </div>
 </body>
 </html>
